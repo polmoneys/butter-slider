@@ -1,0 +1,11 @@
+.slideable-container {
+  width: 100%;
+  overflow-x: hidden;
+}
+.slideable-viewport {
+  white-space: nowrap;
+  user-select: none;
+  cursor: grab;
+  backface-visibility: hidden;
+  will-change: transform;
+}
