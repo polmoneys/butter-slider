@@ -1,0 +1,46 @@
+/*
+    TIP: OVERRIDE DEFAULT
+     STYLES
+
+  <Slideable className="custom-slideable"/>
+
+  .custom-slideable [aria-hidden="true"] {
+    // progress
+  }    
+
+    .custom-slideable [aria-hidden="true"] > div {
+      //bar
+  }    
+
+*/
+
+.container {
+    width: 100%;
+    overflow-x: hidden;
+
+    .viewport {
+        white-space: nowrap;
+        user-select: none;
+        cursor: grab;
+        backface-visibility: hidden;
+        will-change: transform;
+    }
+
+    .progress {
+        position: relative;
+        height: 2px;
+        width: 100%;
+        background-color: rgba(255, 255, 255, 0.2);
+
+        .bar {
+            position: absolute;
+            height: 2px;
+            width: 0%;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            background-color: rgba(255, 255, 255, 1);
+        }
+    }
+}
